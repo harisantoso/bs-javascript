@@ -69,3 +69,6 @@ Modul 5 : E-Commerce Project
 5.5 Delete Cart
 5.6 Update Cart
 5.7 Simpan Pesanan
+
+terhubung ke git hub
+nama remotnya bsjavascript
