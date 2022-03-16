@@ -1,0 +1,71 @@
+deklarasi 
+const	  
+let
+
+document.querySelector = berfungsi untuk mendfatkan element html berdasarkan
+selector html yg berupa nama class, id atau nama tag
+
+loadEventListeners = meload semua event
+
+appendChild() berfungsi untuk meyematkan object pada tag html yang akan
+ditampilkan diweb browser
+
+Modul 1 : Introduction
+1.1 Introduction
+1.2 Pengenalan Javascript
+1.3 Menampilkan Alert pada HTML
+1.4 Menampilkan Link dengan Alert
+1.5 Menampilkan Console Log pada Web Browser
+1.6 Membuat Fungsi If dan Else
+1.7 Membuat Variable pada Javascript
+1.8 Tipe Data pada Javascript
+1.9 Tipe Data Boolean
+1.10 Konversi String menjadi Number
+1.11 Function
+1.12 Membuat Function dengan Parameter
+1.13 Membuat Form Input dengan Notifikasi Javascript
+1.14 Membuat Form Validation dengan Javascript
+1.15 Membuat For dengan Validasi Captcha Javascript
+1.16 Menampilkan Captcha pada Form Registrasi dengan Javascript
+1.17 Show dan Hidden Password pada Form Login
+
+Modul 2 : DOM
+2.1 Apa Itu DOM
+2.2 Form Tambah Item Tugas
+2.3 Action Insert Data With DOM in Javascript
+2.4 Remove Data With Javascript
+2.5 Filter Data dengan Javascript
+2.6 Simpan Data ke Penyimpannan Local
+2.7 Hapus Data dari Penyimpanan Local
+2.8 Membuat Form Kalkulator Pinjaman
+2.9 Menampilkan Data Kalkulator Pinjaman (2)
+
+Modul 3 : OOP
+3.1 Pengenalan OOP
+3.2 Pengenalan Method
+3.3 Project OOP Form Insert Data Paket Kursus
+3.4 Insert Data Paket Kursus with OOP Javascript
+3.5 Membuat Notifikasi Input
+3.6 Tampilkan Data Paket Kursus di Penyimpanan Local dengan OOP
+3.7 Delete Data Menggunakan Metode OOP
+
+Modul 4 : CRUD Data dengan Menggunakan Javascript
+4.1 Membuat Form Insert Data Paket
+4.2 Menampilkan Data dari Javascript
+4.3 Insert Data Tahap Pertama with Console
+4.4 Insert Data Tahap Dua
+4.5 Membuat Jumlah Harga Kursus
+4.6 Update Data Tahap Satu
+4.7 Update Data Paket Tahap Dua
+4.8 Clear Data Paket
+4.9 Simpan Data ke Local Storage
+4.10 Delete & Update Data From Local Storage
+
+Modul 5 : E-Commerce Project
+5.1 Ecommerce Javascript
+5.2 Membuat Ecommerce Javascript Part 2
+5.3 Javascript Ecommerce Part 3
+5.4 Addtocart Data with Javascript
+5.5 Delete Cart
+5.6 Update Cart
+5.7 Simpan Pesanan
