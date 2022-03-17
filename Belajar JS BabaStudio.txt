@@ -70,5 +70,10 @@ Modul 5 : E-Commerce Project
 5.6 Update Cart
 5.7 Simpan Pesanan
 
+mulai 16-3-2022
+selesai 16-3-2022
+
+telah sampai video 1.7
+
 terhubung ke git hub
 nama remotnya bsjavascript

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+</head>
+
+<body>
+  <h1>Function Parameter</h1>
+
+  <script>
+    function nama() {
+      nama = prompt("masukan nama anda!!")
+      alert("Halo selamat datang " + nama)
+    }
+    // nama()
+
+    function pekerjaan() {
+      kerjaan = prompt("Pekerjaan anda?")
+      alert(nama + " anda sebagai " + kerjaan)
+    }
+    // pekerjaan()
+
+    function usia(nama, usia) {
+      nama = prompt("Masukan nama anda?")
+      usia = prompt("masukan usia anda?")
+
+      if (usia >= 17) {
+        alert("Selamat datang " + nama + " di website kami")
+      } else {
+        alert("Halo " + nama + " anda masih dibawah umur")
+      }
+    }
+    usia()
+  </script>
+
+</body>
+
+</html>
