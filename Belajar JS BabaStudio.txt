@@ -77,3 +77,6 @@ telah sampai video 1.7
 
 terhubung ke git hub
 nama remotnya bsjavascript
+
+*masalah pada push git 
+git config --add
