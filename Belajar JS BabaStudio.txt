@@ -80,3 +80,5 @@ nama remotnya bsjavascript
 
 *masalah pada push git 
 git config --add
+
+git push -u bsjavascript master
