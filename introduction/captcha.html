@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <style>
+    .captcha {
+      color: wheat;
+      background-color: green;
+      width: 100px;
+      text-align: center;
+    }
+
+    .pesanerror {
+      color: red;
+    }
+  </style>
+
+
+  <script>
+    let captcha = new Array()
+
+    function captchajavascript() {
+      let recaptcha = document.getElementById("nilaicaptcha").value
+      let nilai = 0
+      for (let i = 0; i < 6; i++) {
+        if (recaptcha.charAt(i) != captcha[i]) {
+          nilai++
+        }
+      }
+      if (recaptcha == "") {
+        document.getElementById('errCaptcha').innerHTML = 'isi Captcha Terlebih Dahulu'
+      } else if (nilai > 0 || recaptcha.length > 6) {
+        document.getElementById('errCaptcha').innerHTML = 'Captcha salah'
+      } else {
+        document.getElementById('errCaptcha').innerHTML = 'Data berhasil disimpan'
+      }
+    }
+
+    function creatCaptcha() {
+      for (z = 0; z < 6; z++) {
+        if (z % 2 == 0) {
+          captcha[z] = String.fromCharCode(Math.floor((Math.random() * 26) + 65))
+        } else {
+          captcha[z] = Math.floor((Math.random() * 10) + 0)
+        }
+      }
+      theCaptcha = captcha.join("")
+      document.getElementById('captcha').innerHTML = "<span class= 'captcha'>" + theCaptcha + "</span>" +
+        "&nbsp; <a onclick = 'creatCaptcha()' href='#'>Cari yang lain</a>"
+    }
+  </script>
+
+
+  <title>Introduction</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-md-8">
+        <h1 class="mb-5">Captcha</h1>
+        <form>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nama</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Masukan Nama">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Username</label>
+            <input type="username" class="form-control" id="exampleInputPassword1" placeholder="Masukan Username">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Alamat</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Captcha</label>
+            <span id="captcha"></span>
+            <script>
+              creatCaptcha();
+            </script>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Masukan Captcha</label>
+            <input type="text" class="form-control" id="nilaicaptcha" placeholder="Isi Captcha">
+            <span id="errCaptcha" class="pesanerror"></span>
+          </div>
+
+          <input type="submit" class="btn btn-primary" name="" value="simpan" onclick="captchajavascript()">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

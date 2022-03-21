@@ -1,0 +1,10 @@
+.captcha {
+  color: white;
+  background-color: green;
+  width: 100px;
+  text-align: center;
+}
+
+.pesanerror {
+  color: red;
+}
