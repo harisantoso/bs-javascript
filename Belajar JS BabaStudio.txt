@@ -73,7 +73,7 @@ Modul 5 : E-Commerce Project
 mulai 16-3-2022
 selesai 16-3-2022
 
-telah sampai video 1.7
+telah sampai video dom video 3
 
 terhubung ke git hub
 nama remotnya bsjavascript

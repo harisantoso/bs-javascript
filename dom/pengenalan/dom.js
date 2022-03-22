@@ -1,0 +1,1 @@
+document.getElementById("paragraf").innerHTML = "Pengenalan DOM dan Apa itu Dom...?"

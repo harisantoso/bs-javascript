@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- online -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Form Tambah Item Tugas</h2>
+    <div class="row">
+      <div class="col s12">
+        <div class="main" class="card">
+          <div class="card-content">
+
+            <span class="card-title">Daftar Tugas</span>
+            <div class="row">
+              <form action="" id="task-form">
+                <div class="input-field-col s12">
+                  <input type="text" name="task" id="task" placeholder="Masukna Jenis Tugas">
+                </div>
+                <input type="submit" value="simpan tugas" class="btn">
+              </form>
+            </div>
+
+          </div>
+
+          <div class="card-action">
+            <h4 id="task-title">Task</h4>
+            <div class="input-field col s12">
+              <input type="text" name="filter" id="filter">
+              <label for="filter">Filter Task</label>
+            </div>
+            <ul class="collection"></ul>
+            <a href="#" class="clear-tasks btn black">Clear task</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- link ini juga bisa -->
+  <!-- <script src="/dom/daftar-tugas/script/script.js"></script> -->
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>
