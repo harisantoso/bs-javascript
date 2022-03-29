@@ -1,0 +1,6 @@
+Project OOP
+Input Data Paket Kursus
+
+- Kekurangan
+1. ketika dihapus kembali tampil data saat di refrest
+2. saat mendelete item tidak ada alert data terhapus
