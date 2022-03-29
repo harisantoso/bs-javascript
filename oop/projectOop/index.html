@@ -30,8 +30,19 @@
           </div>
           <div class="mb-3">
             <label for="jenis" class="form-label">Jenis Paket</label>
-            <input type="text" class="form-control" id="jenis" placeholder="Masukan Jenis Paket">
+            <!-- <input type="text" class="form-control" id="jenis" placeholder="Masukan Jenis Paket"> -->
+
+            <select class="form-select" id="jenis" aria-label="Default select example">
+              <option value="0" disabled selected>Pilih Paket Kursus</option>
+              <option value="Programming">Programming</option>
+              <option value="Akuntasi">Akuntasi</option>
+              <option value="Arsitek">Arsitek</option>
+            </select>
+
           </div>
+
+
+
           <div class="mb-3">
             <label for="harga" class="form-label">Harga Paket</label>
             <input type="number" class="form-control" id="harga" placeholder="Masukan Harga Paket">

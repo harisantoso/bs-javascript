@@ -81,7 +81,7 @@ document.getElementById('paket-kursus').addEventListener('submit', function (e) 
   const kursus = new Kursus(paket, jenis, harga)
   const ui = new UI()
 
-  if (paket === '' || jenis === '' || harga === '') {
+  if (paket === '' || jenis === '0' || harga === '') {
     alert('mohon isi data')
   } else {
     ui.simpanData(kursus)
@@ -97,7 +97,7 @@ document.getElementById('data-paket').addEventListener('click', function (e) {
   const ui = new UI()
   ui.deleteKursus(e.target)
 
-  paketKursus.deleteData(e.target.parentElement.previusElementSibling.textContent)
+  paketKursus.deleteData(e.target.parentElement.previusElementSibling)
   alert('yakin ingin menghapus')
   e.preventDefault()
 })
